@@ -7,6 +7,7 @@ body{
     background-position-y: center  ;
 }
 .contain{
+    margin-top: 4rem;
     text-align: center;
 }
 
@@ -32,9 +33,9 @@ label{
     }
 
 .navigation {
-    box-shadow: 10px 5px 5px black ;
+    box-shadow: 10px 5px 5px white ;
     background-color: #12114d;
-    color: black;
+    color: white;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
     top: 0;
@@ -50,23 +51,37 @@ label{
     }
         
     .navigation .link {
-        color:black;
+        color:white;
     }
         
     .navigation .link-active {
         font-weight: bold;
     }
 
+    #btn-check{
+        font-size: larger;
+    }
+    
+    #btn-check:hover{
+        color: #12114d;
+        border-style: solid;
+        background-color:white;
+        border-color: #12114d;
+    }
 
+    #output-txt{
+        font-weight: bolder;
+        
+    }
 
 .footer {
     margin-top: 5%;
     background-color: #12114d;
     padding: 2rem 1rem;
     text-align: center;
-    color: black;
+    color: white;
     border-top-right-radius: 1rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
 }
 
 .footer .footer-header {
@@ -75,7 +90,7 @@ label{
 }
 
 .footer .link {
-    color: black;
+    color: white;
 }
 
 .footer ul {
