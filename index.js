@@ -1,0 +1,32 @@
+var initialPrice = document.querySelector('#initial-price');
+var stkquantity = document.querySelector('#quantity');
+var currentPrice = document.querySelector('#current-price');
+
+var btnCheck = document.querySelector('#btn-check');
+var output = document.querySelector('#output-txt');
+
+function calcyPnL(initial,quantity,current) {
+    if (current>initial) {
+        var profit = (current-initial)*quantity;
+        var profitPercentage = (profit/initial)*100;
+        output.innerText = "You incurred Profit of "+ profit + " and the Profit% is "+ profitPercentage;
+    } else if(initial>current) {
+        var loss = (initial-current)*quantity;
+        var lossPercentage = (loss/initial)*100;
+        output.innerText = "You incurred a Loss of "+ loss + " and the Loss% is "+ lossPercentage;
+    } else{
+        output.innerText = "Nothing to show here...";
+    }
+}
+
+
+
+function clickHandler() {
+    var iniP = Number(initialPrice.value);
+    var sqty = Number(stkquantity.value);
+    var currP = Number(currentPrice.value);
+
+    calcyPnL(iniP,sqty,currP);
+};
+
+btnCheck.addEventListener('click', clickHandler);
