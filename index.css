@@ -1,8 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300&display=swap');
 body{
+    font-family: 'Lato', sans-serif;
+    background-image: url('stonks.png') ;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position-y: center  ;
+}
+.contain{
     text-align: center;
 }
 
 label{
     display: block;
     padding: 1rem;
+    font-weight: bolder;
+}
+
+.link{
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    
+    }
+    
+    .list-non-bullet {
+        list-style: none;
+    }
+    
+    .list-item-inline {
+        display: inline;
+        padding: 0rem 0.5rem;
+    }
+
+.navigation {
+    box-shadow: 10px 5px 5px black ;
+    background-color: #12114d;
+    color: black;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    top: 0;
+    padding-top: 2rem;
+    }
+    
+    .navigation .nav-hmm {
+        font-weight: bold;
+    }
+        
+    .navigation .nav-pills {
+        text-align: right;
+    }
+        
+    .navigation .link {
+        color:black;
+    }
+        
+    .navigation .link-active {
+        font-weight: bold;
+    }
+
+
+
+.footer {
+    margin-top: 5%;
+    background-color: #12114d;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: black;
+    border-top-right-radius: 1rem;
+    padding-bottom: 5rem;
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer .link {
+    color: black;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
 }
