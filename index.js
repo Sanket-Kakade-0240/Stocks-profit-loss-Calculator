@@ -8,11 +8,11 @@ var output = document.querySelector('#output-txt');
 function calcyPnL(initial,quantity,current) {
     if (current>initial) {
         var profit = (current-initial)*quantity;
-        var profitPercentage = (profit/initial)*100;
+        var profitPercentage = (((current-initial)*100)/initial);
         output.innerText = "You incurred Profit of "+ profit + " and the Profit% is "+ profitPercentage + "💹";
     } else if(initial>current) {
         var loss = (initial-current)*quantity;
-        var lossPercentage = (loss/initial)*100;
+        var lossPercentage = (((initial-current)*100)/initial);
         output.innerText = "You incurred a Loss of "+ loss + " and the Loss% is "+ lossPercentage + "😖";
     } else{
         output.innerText = "Nothing to show here... 🙅‍♂️";
